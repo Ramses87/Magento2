@@ -1,0 +1,16 @@
+<style>
+    .limiter {
+        display: block;
+    }
+</style>
+<?php if ($this->getItems()->count()): ?>
+    <?php foreach($this->getItems() as $item): ?>
+        <p>№<?php echo $item->getId() ?></p>
+        <p><?php echo $item->getUrlKey() ?></p>
+         <p><?php echo $item->getContent() ?></p>
+    <hr>
+    <?php endforeach; ?>
+<?php endif; ?>
+<?php if ($this->getPagerHtml()): ?>
+    <div class="order-products-toolbar toolbar bottom"><?php echo $this->getPagerHtml(); ?></div>
+<?php endif ?>

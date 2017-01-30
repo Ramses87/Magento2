@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="Magecom_Learning::top" title="Magecom" module="Magecom_Learning" sortOrder="1000"
+             resource="Magecom_Learning::config"/>
+
+        <add id="Magecom_Learning::learning_configuration" title="Configuration" module="Magecom_Learning"
+             sortOrder="1100" parent="Magecom_Learning::top"
+             action="adminhtml/system_config/edit/section/learning"
+             resource="Magecom_Learning::config"/>
+    </menu>
+</config>
